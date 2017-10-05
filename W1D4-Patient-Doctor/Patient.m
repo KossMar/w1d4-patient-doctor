@@ -7,7 +7,29 @@
 //
 
 #import "Patient.h"
+#import "Doctor.h"
+
 
 @implementation Patient
+
+-(instancetype) initWithName:(NSString*)name andAge:(int)age andHealthCardStatus:(BOOL)status {
+    self = [super init];
+    if (self) {
+        _name = name;
+        _age = age;
+        _healthCardStatus = status;
+    }
+    return self;
+}
+
+-(void)visitDoctor:(Doctor*)someDoctor {
+    [someDoctor checkHealthCard:self];
+    
+}
+
+-(void)requestMedicationFrom:(Doctor*)someDoctor {
+//    [someDoctor prescribeDrugs:self];
+}
+
 
 @end

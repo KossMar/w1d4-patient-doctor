@@ -8,6 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+@class Patient;
+
 @interface Doctor : NSObject
+
+@property (nonatomic) NSString* name;
+@property (nonatomic) NSString* specialization;
+@property (nonatomic) NSMutableSet* acceptedPatients;
+
+-(instancetype) initWithName:(NSString*)name andSpecialization:(NSString*)specialization;
+
+-(void)checkHealthCard:(Patient*)patient;
+
+-(void)prescribeToPatient:(Patient*)patient;
+
+
 
 @end

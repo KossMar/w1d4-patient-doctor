@@ -10,6 +10,7 @@
 		0D6C21211F86D5FD00AEB578 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C21201F86D5FD00AEB578 /* main.m */; };
 		0D6C21291F86D6C200AEB578 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C21281F86D6C200AEB578 /* Doctor.m */; };
 		0D6C212C1F86D6CB00AEB578 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C212B1F86D6CB00AEB578 /* Patient.m */; };
+		0D6C212F1F8705F100AEB578 /* Medication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C212E1F8705F100AEB578 /* Medication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		0D6C21281F86D6C200AEB578 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		0D6C212A1F86D6CB00AEB578 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
 		0D6C212B1F86D6CB00AEB578 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		0D6C212D1F8705F100AEB578 /* Medication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medication.h; sourceTree = "<group>"; };
+		0D6C212E1F8705F100AEB578 /* Medication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				0D6C21281F86D6C200AEB578 /* Doctor.m */,
 				0D6C212A1F86D6CB00AEB578 /* Patient.h */,
 				0D6C212B1F86D6CB00AEB578 /* Patient.m */,
+				0D6C212D1F8705F100AEB578 /* Medication.h */,
+				0D6C212E1F8705F100AEB578 /* Medication.m */,
 			);
 			path = "W1D4-Patient-Doctor";
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D6C212F1F8705F100AEB578 /* Medication.m in Sources */,
 				0D6C212C1F86D6CB00AEB578 /* Patient.m in Sources */,
 				0D6C21291F86D6C200AEB578 /* Doctor.m in Sources */,
 				0D6C21211F86D5FD00AEB578 /* main.m in Sources */,

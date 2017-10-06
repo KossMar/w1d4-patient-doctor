@@ -9,14 +9,20 @@
 #import <Foundation/Foundation.h>
 #import "Patient.h"
 #import "Doctor.h"
+#import "Medication.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
       
-        Patient *mar = [[Patient alloc] initWithName:@"Mar" andAge:24 andHealthCardStatus:YES];
+        
+        Patient *mar = [[Patient alloc] initWithName:@"Mar" andAge:24 andHealthCardStatus:YES andSymptoms:@"cough"];
         Doctor *daniel = [[Doctor alloc] initWithName:@"Daniel" andSpecialization:@"Face and Butt Docotor"];
         
         [mar visitDoctor:daniel];
+        [mar requestMedicationFrom:daniel];
+        [daniel checkPrescriptionHistory];
+        
+        
         
     }
     return 0;

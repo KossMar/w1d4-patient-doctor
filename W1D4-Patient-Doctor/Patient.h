@@ -1,22 +1,21 @@
-//
-//  Patient.h
-//  W1D4-Patient-Doctor
-//
-//  Created by Mar Koss on 2017-10-05.
-//  Copyright © 2017 Mar Koss. All rights reserved.
-//
+
 
 #import <Foundation/Foundation.h>
 
 @class Doctor;
+@class Medication;
+@class PrescriptionHistory;
+
 
 @interface Patient : NSObject
 
 @property (nonatomic) NSString* name;
+@property (nonatomic) NSString* symptoms;
+@property (nonatomic) Medication* medication; //set to object later
 @property (nonatomic) int age;
 @property (nonatomic) BOOL healthCardStatus;
 
--(instancetype) initWithName:(NSString*)name andAge:(int)age andHealthCardStatus:(BOOL)status;
+-(instancetype) initWithName:(NSString*)name andAge:(int)age andHealthCardStatus:(BOOL)status andSymptoms:(NSString*)symptoms;
 
 -(void)visitDoctor:(Doctor*)someDoctor;
 
